@@ -50,8 +50,9 @@
 3. Klik **GitHub**
 4. Pilih repository `hakli-soppeng` yang tadi dibuat
 5. Pada bagian **Build settings**:
-   - Build command: `node build-berita.js`
-   - Publish directory: `.`
+   - **Build command** → ketik: `node build-berita.js`
+   - **Publish directory** → ketik: `.` (titik satu, artinya folder utama)
+   - **Node version** → biarkan default
 6. Klik **Deploy site**
 
 ### Langkah 2.3 — Tunggu Deploy Selesai
