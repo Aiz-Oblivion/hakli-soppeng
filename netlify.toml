@@ -1,7 +1,6 @@
 [build]
-  base = "hakli-soppeng"
-  publish = "."
-  command = "node build-berita.js"
+  publish = "hakli-soppeng"
+  command = "node hakli-soppeng/build-berita.js"
 
 [[redirects]]
   from = "/admin"
