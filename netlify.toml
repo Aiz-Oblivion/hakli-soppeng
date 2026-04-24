@@ -1,6 +1,6 @@
 [build]
   publish = "hakli-soppeng"
-  command = "node hakli-soppeng/build-berita.js"
+  command = "cd hakli-soppeng && node build-berita.js"
 
 [[redirects]]
   from = "/admin"
