@@ -860,6 +860,9 @@ body {
   }
   .nav-links.open { display: flex; }
   .nav-link { font-size: 20px; color: white !important; padding: 12px 32px; }
+  .navbar.scrolled .nav-link { color: white !important; }
+  .navbar.scrolled .nav-link:hover,
+  .navbar.scrolled .nav-link.active { background: rgba(255,255,255,0.15); color: white !important; }
   .hamburger { display: flex; z-index: 1001; }
 
   /* Hero */
