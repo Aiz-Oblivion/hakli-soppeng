@@ -3,13 +3,12 @@ title: HARI PEDULI SAMPAH NASIONAL
 date: 21 February 2026
 kategori: Pengumuman
 foto: https://i.ibb.co.com/dwyNP8S8/1771658734491017-0.jpg
-ringkasan: |-
-  🗓️ 21 FEBRUARI - HARI PEDULI SAMPAH NASIONAL
-
-  💔 Tragedi Leuwigajah mengingatkan kita bahwa masalah sampah tidak hanya terjadi di kota besar – DI SOPPENG PUN KITA HARUS WASPADA DAN BERAKSI!
+ringkasan: 🗓️ 21 FEBRUARI - HARI PEDULI SAMPAH NASIONAL
 featured: false
 published: true
 ---
+
+💔 Tragedi Leuwigajah mengingatkan kita bahwa masalah sampah tidak hanya terjadi di kota besar – DI SOPPENG PUN KITA HARUS WASPADA DAN BERAKSI!
 
 ✨ KENAPA KITA PEDULI SAMPAH DI SOPPENG?
 
