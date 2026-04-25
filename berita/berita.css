@@ -79,10 +79,13 @@
 
 .berita-detail-img {
   width: 100%;
-  max-height: 480px;
-  object-fit: cover;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
   border-radius: var(--radius);
   margin-bottom: 28px;
+  background: var(--gray-light);
+  display: block;
 }
 
 .berita-ringkasan {
