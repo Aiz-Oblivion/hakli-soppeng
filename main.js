@@ -161,7 +161,7 @@ async function loadBerita() {
         : `<div class="news-img-placeholder"><i class="fas fa-newspaper"></i></div>`;
 
       return `
-        <div class="news-card ${isFeatured ? 'featured' : ''}">
+        <div class="news-card ${isFeatured ? 'featured' : ''}" data-kategori="${b.kategori || 'Berita'}">
           <div class="news-img">
             ${fotoHtml}
             <span class="news-tag">${b.kategori || 'Berita'}</span>
@@ -175,6 +175,26 @@ async function loadBerita() {
         </div>
       `;
     }).join('');
+
+    // Tampilkan filter
+    const filterEl = document.getElementById('newsFilter');
+    if (filterEl) filterEl.style.display = 'flex';
+
+    // Logika filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.news-card').forEach(card => {
+          if (filter === 'semua' || card.dataset.kategori === filter) {
+            card.classList.remove('hidden-filter');
+          } else {
+            card.classList.add('hidden-filter');
+          }
+        });
+      });
+    });
 
   } catch (err) {
     grid.innerHTML = `<p style="color:var(--gray);text-align:center;grid-column:1/-1;">Gagal memuat berita. Silakan coba lagi.</p>`;
