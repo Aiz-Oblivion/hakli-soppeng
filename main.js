@@ -170,7 +170,7 @@ async function loadBerita() {
             <span class="news-date"><i class="fas fa-calendar"></i> ${b.date}</span>
             <h3>${b.title}</h3>
             <p>${b.ringkasan}</p>
-            <a href="#" class="card-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            <a href="${b.url || '#'}" class="card-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       `;
