@@ -216,7 +216,7 @@ if (window.netlifyIdentity) {
 }
 
 // ===== CONTACT FORM — WhatsApp =====
-const WA_NUMBER = '6281234567890'; // ganti dengan nomor WA HAKLI Soppeng
+const WA_NUMBER = '6285338160947'; // ganti dengan nomor WA HAKLI Soppeng
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
