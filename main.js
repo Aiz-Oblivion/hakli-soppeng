@@ -204,17 +204,6 @@ async function loadBerita() {
 
 loadBerita();
 
-// ===== NETLIFY IDENTITY =====
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on('init', user => {
-    if (!user) {
-      window.netlifyIdentity.on('login', () => {
-        document.location.href = '/admin/';
-      });
-    }
-  });
-}
-
 // ===== CONTACT FORM — WhatsApp =====
 const WA_NUMBER = '6285338160947'; // ganti dengan nomor WA HAKLI Soppeng
 
