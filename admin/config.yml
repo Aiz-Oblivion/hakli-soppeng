@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: NAMA_GITHUB/hakli-soppeng
   branch: main
+  base_url: https://sveltia-cms-auth.NAMA_WORKER.workers.dev
 
 media_folder: "uploads/images"
 public_folder: "/uploads/images"
@@ -20,8 +22,8 @@ collections:
         name: "kategori"
         widget: "select"
         options: ["Kegiatan", "Program", "Pelatihan", "Pengumuman", "Berita"]
-      - { label: "Foto", name: "foto", widget: "image", required: false, hint: "Upload foto untuk berita ini" }
-      - { label: "Ringkasan", name: "ringkasan", widget: "text", hint: "Deskripsi singkat (maks 150 karakter)" }
+      - { label: "Foto", name: "foto", widget: "image", required: false }
+      - { label: "Ringkasan", name: "ringkasan", widget: "text" }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
-      - { label: "Tampilkan sebagai Berita Utama", name: "featured", widget: "boolean", default: false }
+      - { label: "Berita Utama", name: "featured", widget: "boolean", default: false }
       - { label: "Publikasikan", name: "published", widget: "boolean", default: true }
