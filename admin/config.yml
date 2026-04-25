@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: NAMA_GITHUB/hakli-soppeng
+  repo: Aiz-Oblivion/hakli-soppeng
   branch: main
-  base_url: https://sveltia-cms-auth.NAMA_WORKER.workers.dev
+  base_url: https://sveltia-cms-auth.agathakyedae.workers.dev
 
 media_folder: "uploads/images"
 public_folder: "/uploads/images"
