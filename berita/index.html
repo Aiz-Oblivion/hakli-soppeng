@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berita & Kegiatan - HAKLI Soppeng</title>
+  <meta name="description" content="Berita dan kegiatan terbaru HAKLI Soppeng - Himpunan Ahli Kesehatan Lingkungan Indonesia Cabang Kabupaten Soppeng." />
+  <link rel="icon" type="image/png" href="https://hakli.or.id/wp-content/uploads/2025/04/cropped-cropped-cropped-hakli-removebg-preview.png" />
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .page-header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+      padding: 120px 0 48px;
+      text-align: center;
+      color: white;
+    }
+    .page-header h1 { font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+    .page-header p { font-size: 16px; color: rgba(255,255,255,0.7); }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-logo">
+        <img src="https://hakli.or.id/wp-content/uploads/2025/04/cropped-cropped-cropped-hakli-removebg-preview.png" alt="Logo HAKLI" class="logo-img" />
+        <div>
+          <span class="logo-title">HAKLI</span>
+          <span class="logo-sub">Soppeng</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#beranda" class="nav-link">Beranda</a></li>
+        <li><a href="/#tentang" class="nav-link">Tentang</a></li>
+        <li><a href="/#program" class="nav-link">Aspek Kerja</a></li>
+        <li><a href="/berita/" class="nav-link active">Berita</a></li>
+        <li><a href="/#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Berita & Kegiatan</h1>
+      <p>Informasi terbaru seputar kegiatan dan program HAKLI Soppeng</p>
+    </div>
+  </div>
+
+  <!-- Berita -->
+  <section class="section">
+    <div class="container">
+      <div class="news-filter" id="newsFilter" style="display:none;">
+        <button class="filter-btn active" data-filter="semua">Semua</button>
+        <button class="filter-btn" data-filter="Kegiatan">Kegiatan</button>
+        <button class="filter-btn" data-filter="Program">Program</button>
+        <button class="filter-btn" data-filter="Pelatihan">Pelatihan</button>
+        <button class="filter-btn" data-filter="Pengumuman">Pengumuman</button>
+        <button class="filter-btn" data-filter="Berita">Berita</button>
+      </div>
+      <div class="news-grid" id="newsGrid">
+        <div class="news-loading">
+          <i class="fas fa-spinner fa-spin"></i>
+          <span>Memuat berita...</span>
+        </div>
+      </div>
+      <div class="news-empty" id="newsEmpty" style="display:none;">
+        <i class="fas fa-newspaper"></i>
+        <p>Belum ada berita yang dipublikasikan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="https://hakli.or.id/wp-content/uploads/2025/04/cropped-cropped-cropped-hakli-removebg-preview.png" alt="Logo HAKLI" class="logo-img" />
+          <div>
+            <span class="logo-title">HAKLI</span>
+            <span class="logo-sub">Soppeng</span>
+          </div>
+        </div>
+        <p>Himpunan Ahli Kesehatan Lingkungan Indonesia Cabang Kabupaten Soppeng. Bersama membangun lingkungan sehat.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="/#beranda">Beranda</a></li>
+          <li><a href="/#tentang">Tentang</a></li>
+          <li><a href="/#program">Aspek Kerja</a></li>
+          <li><a href="/berita/">Berita</a></li>
+          <li><a href="/#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Aspek Kerja</h4>
+        <ul>
+          <li><a href="/program/sanitasi-air-bersih.html">Sanitasi Air Bersih</a></li>
+          <li><a href="/program/kesling-pemukiman.html">Penyehatan Lingkungan Pemukiman</a></li>
+          <li><a href="/program/pengelolaan-sampah.html">Pengelolaan Sampah & Limbah</a></li>
+          <li><a href="/program/pengendalian-vektor.html">Pengendalian Vektor & Binatang Pembawa Penyakit</a></li>
+          <li><a href="/program/penyehatan-makanan.html">Hygiene & Sanitasi Pangan</a></li>
+          <li><a href="/program/kesehatan-kerja.html">Kesehatan Kerja</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Kontak</h4>
+        <p><i class="fas fa-location-dot"></i> Jl. Salotungo, Watansoppeng, Sulawesi Selatan</p>
+        <p><i class="fas fa-phone"></i> +62 853-3816-0947</p>
+        <p><i class="fas fa-envelope"></i> keslingsoppeng@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 HAKLI Soppeng. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      const spans = hamburger.querySelectorAll('span');
+      if (navLinks.classList.contains('open')) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+      }
+    });
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+      });
+    });
+
+    // Load semua berita
+    async function loadBerita() {
+      const grid = document.getElementById('newsGrid');
+      const empty = document.getElementById('newsEmpty');
+      try {
+        const res = await fetch('/berita.json?v=' + Date.now());
+        if (!res.ok) throw new Error('Gagal memuat berita');
+        const data = await res.json();
+        const published = data.filter(b => b.published !== false);
+
+        if (published.length === 0) {
+          grid.style.display = 'none';
+          empty.style.display = 'flex';
+          return;
+        }
+
+        const sorted = [
+          ...published.filter(b => b.featured),
+          ...published.filter(b => !b.featured)
+        ];
+
+        grid.innerHTML = sorted.map((b, i) => {
+          const isFeatured = i === 0 && b.featured;
+          const fotoHtml = b.foto
+            ? `<img src="${b.foto}" alt="${b.title}" style="width:100%;height:100%;object-fit:cover;" />`
+            : `<div class="news-img-placeholder"><i class="fas fa-newspaper"></i></div>`;
+          return `
+            <div class="news-card ${isFeatured ? 'featured' : ''}" data-kategori="${b.kategori || 'Berita'}">
+              <div class="news-img">
+                ${fotoHtml}
+                <span class="news-tag">${b.kategori || 'Berita'}</span>
+              </div>
+              <div class="news-body">
+                <span class="news-date"><i class="fas fa-calendar"></i> ${b.date}</span>
+                <h3>${b.title}</h3>
+                <p>${b.ringkasan}</p>
+                <a href="${b.url || '#'}" class="card-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        const filterEl = document.getElementById('newsFilter');
+        if (filterEl) filterEl.style.display = 'flex';
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            document.querySelectorAll('.news-card').forEach(card => {
+              card.classList.toggle('hidden-filter', filter !== 'semua' && card.dataset.kategori !== filter);
+            });
+          });
+        });
+
+      } catch (err) {
+        grid.innerHTML = `<p style="color:var(--gray);text-align:center;grid-column:1/-1;">Gagal memuat berita.</p>`;
+      }
+    }
+    loadBerita();
+  </script>
+
+</body>
+</html>
