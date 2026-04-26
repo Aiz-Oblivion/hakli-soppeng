@@ -1,109 +1,20 @@
 /* ===== HALAMAN DETAIL BERITA ===== */
-
-.berita-hero {
-  background: linear-gradient(135deg, #0f4c2a 0%, #166534 50%, #0c4a6e 100%);
-  padding: 140px 0 64px;
-  position: relative;
-}
-
-.berita-hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 8px 16px;
-  border-radius: 100px;
-  backdrop-filter: blur(8px);
-}
-
+.berita-hero {background: linear-gradient(135deg, #0f4c2a 0%, #166534 50%, #0c4a6e 100%);padding: 140px 0 64px;position: relative;}
+.berita-hero-content {position: relative;z-index: 1;}
+.back-link {display: inline-flex;align-items: center;gap: 8px;color: rgba(255,255,255,0.7);text-decoration: none;font-size: 14px;font-weight: 500;margin-bottom: 20px;transition: all 0.3s ease;border: 1px solid rgba(255,255,255,0.2);padding: 8px 16px;border-radius: 100px;backdrop-filter: blur(8px);}
 .back-link:hover { color: white; border-color: rgba(255,255,255,0.5); }
-
-.news-tag-hero {
-  display: inline-block;
-  background: var(--primary);
-  color: white;
-  padding: 4px 14px;
-  border-radius: 100px;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-.berita-hero-content h1 {
-  font-size: clamp(24px, 4vw, 40px);
-  font-weight: 800;
-  color: white;
-  margin-bottom: 16px;
-  max-width: 800px;
-  line-height: 1.3;
-}
-
-.berita-meta {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.berita-meta span {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: rgba(255,255,255,0.7);
-  font-size: 14px;
-}
-
+.news-tag-hero {display: inline-block;background: var(--primary);color: white;padding: 4px 14px;border-radius: 100px;font-size: 13px;font-weight: 600;margin-bottom: 16px;}
+.berita-hero-content h1 {font-size: clamp(24px, 4vw, 40px);font-weight: 800;color: white;margin-bottom: 16px;max-width: 800px;line-height: 1.3;}
+.berita-meta {display: flex;gap: 20px;flex-wrap: wrap;}
+.berita-meta span {display: flex;align-items: center;gap: 6px;color: rgba(255,255,255,0.7);font-size: 14px;}
 .berita-meta span i { color: var(--primary); }
 
 /* ===== DETAIL LAYOUT ===== */
-.berita-detail-container {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 48px;
-  align-items: start;
-}
-
-.berita-detail-main {
-  min-width: 0;
-}
-
-.berita-detail-img {
-  width: 100%;
-  height: auto;
-  max-height: 560px;
-  object-fit: contain;
-  border-radius: var(--radius);
-  margin-bottom: 28px;
-  background: var(--gray-light);
-  display: block;
-}
-
-.berita-ringkasan {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--dark);
-  line-height: 1.7;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 2px solid var(--gray-light);
-}
-
-.berita-body {
-  color: var(--gray);
-  font-size: 16px;
-  line-height: 1.8;
-}
-
+.berita-detail-container {display: grid;grid-template-columns: 1fr 300px;gap: 48px;align-items: start;}
+.berita-detail-main {min-width: 0;}
+.berita-detail-img {width: 100%;height: auto;max-height: 560px;object-fit: contain;border-radius: var(--radius);margin-bottom: 28px;background: var(--gray-light);display: block;}
+.berita-ringkasan {font-size: 18px;font-weight: 500;color: var(--dark);line-height: 1.7;margin-bottom: 24px;padding-bottom: 24px;border-bottom: 2px solid var(--gray-light);}
+.berita-body {color: var(--gray);font-size: 16px;line-height: 1.8;}
 .berita-body p { margin-bottom: 16px; }
 .berita-body h2 { font-size: 22px; font-weight: 700; color: var(--dark); margin: 28px 0 12px; }
 .berita-body h3 { font-size: 18px; font-weight: 700; color: var(--dark); margin: 20px 0 10px; }
@@ -112,53 +23,22 @@
 .berita-body strong { color: var(--dark); }
 
 /* ===== SIDEBAR ===== */
-.berita-detail-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: sticky;
-  top: 90px;
-}
-
-.sidebar-card ul {
-  list-style: none;
-}
-
-.sidebar-card ul li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  color: var(--gray);
-  padding: 10px 0;
-  border-bottom: 1px solid #e2e8f0;
-}
-
+.berita-detail-sidebar {display: flex;flex-direction: column;gap: 20px;position: sticky;top: 90px;}
+.sidebar-card ul {list-style: none;}
+.sidebar-card ul li {display: flex;justify-content: space-between;align-items: center;font-size: 14px;color: var(--gray);padding: 10px 0;border-bottom: 1px solid #e2e8f0;}
 .sidebar-card ul li:last-child { border-bottom: none; }
 .sidebar-card ul li strong { color: var(--dark); font-weight: 600; }
-
-.share-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.share-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
+.share-buttons {display: flex;flex-direction: column;gap: 8px;}
+.share-btn {display: flex;align-items: center;gap: 8px;padding: 10px 16px;border-radius: 8px;text-decoration: none;font-size: 14px;font-weight: 600;transition: all 0.2s ease;}
 .share-btn.wa { background: #dcfce7; color: #16a34a; }
 .share-btn.wa:hover { background: #16a34a; color: white; }
 .share-btn.fb { background: #dbeafe; color: #1d4ed8; }
 .share-btn.fb:hover { background: #1d4ed8; color: white; }
+
+/* ===== PAGE HEADER (halaman daftar berita) ===== */
+.page-header {background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);padding: 120px 0 48px;text-align: center;color: white;}
+.page-header h1 {font-size: 36px;font-weight: 700;margin-bottom: 8px;}
+.page-header p {font-size: 16px;color: rgba(255,255,255,0.7);}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
@@ -166,8 +46,8 @@
   .berita-detail-container { grid-template-columns: 1fr; gap: 32px; }
   .berita-detail-sidebar { position: static; }
   .berita-ringkasan { font-size: 16px; }
+  .page-header h1 { font-size: 28px; }
 }
-
 @media (max-width: 480px) {
   .berita-hero { padding: 96px 0 40px; }
   .berita-detail-img { max-height: 280px; }
